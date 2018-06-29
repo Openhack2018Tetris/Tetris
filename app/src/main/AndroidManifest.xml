@@ -9,17 +9,17 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name="company.co.kr.LoginActivityPackage.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".TeacherMain" />
-        <activity android:name=".Welcome"
+        <activity android:name="company.co.kr.LoginActivityPackage.SingupActivity" />
+        <activity android:name="company.co.kr.MainActivity" />
+        <activity android:name="company.co.kr.TeacherMain" />
+        <activity android:name="company.co.kr.WelcomeActivityPackage.WelcomeActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
