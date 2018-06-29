@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="fill_parent"
+android:layout_width="fill_parent">
+
+<!-- 어떤 Layout을 사용해도 상관없음 -->
+<!-- 스크롤 바를 위한 공간 확보용 paddingRight="5px" 주목 -->
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingRight="5px" >
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:id="@+id/midfirst"
+        android:text="중학교 1학년" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:id="@+id/midsecond"
+        android:text="중학교 2학년" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:id="@+id/midthird"
+        android:text="중학교 3학년" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:id="@+id/highfirst"
+        android:text="고등학교 1학년" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:id="@+id/highsecond"
+        android:text="고등학교 2학년" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:id="@+id/highthird"
+        android:text="고등학교 3학년" />
+
+</LinearLayout>
+
+</ScrollView>

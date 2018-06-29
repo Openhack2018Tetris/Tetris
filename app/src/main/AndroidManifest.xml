@@ -8,19 +8,22 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="company.co.kr.LoginActivityPackage.LoginActivity">
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="company.co.kr.LoginActivityPackage.SingupActivity" />
+        <activity android:name=".RegistActivity" />
         <activity android:name="company.co.kr.MainActivity" />
         <activity android:name="company.co.kr.TeacherMain" />
-        <activity android:name="company.co.kr.WelcomeActivityPackage.WelcomeActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Welcome" />
+        <activity android:name=".recommend" />
+        <activity android:name=".midfirst" />
+        <activity android:name=".midsecond" />
+        <activity android:name=".midthird"></activity>
     </application>
 
 </manifest>

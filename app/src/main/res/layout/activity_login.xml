@@ -4,68 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
     tools:context="company.co.kr.tugether.LoginActivity">
 
     <EditText
         android:id="@+id/idTextField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="117dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="132dp"
-        android:ems="10"
+        android:layout_width="253dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/email_line"
         android:hint="이메일을 입력하세요."
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/passTextField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="264dp"
-        android:layout_marginEnd="117dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
+        android:layout_width="253dp"
+        android:layout_height="30dp"
+        android:background="@drawable/password_line"
         android:hint="비밀번호를 입력하세요."
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idTextField" />
+        app:layout_constraintTop_toBottomOf="@+id/idTextField"
+        app:layout_constraintVertical_bias="0.147" />
 
-    <Button
-        android:id="@+id/logInBtn"
-        android:layout_width="89dp"
-        android:layout_height="122dp"
-        android:layout_marginBottom="264dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="139dp"
-        android:text="log In"
+    <ImageButton
+        android:id="@+id/logbtn"
+        android:layout_width="253dp"
+        android:layout_height="59dp"
+        android:src="@drawable/login_button"
+        android:background="#000000ff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/passTextField"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passTextField"
+        app:layout_constraintVertical_bias="0.218" />
 
-    <Button
+    <ImageButton
         android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="264dp"
-        android:layout_marginEnd="117dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="45dp"
-        android:ems="10"
-        android:text="Sign up"
+        android:layout_width="63dp"
+        android:layout_height="26dp"
+        android:src="@drawable/signup_buttontext"
+        android:background="#000000ff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passTextField" />
+        app:layout_constraintTop_toBottomOf="@+id/passTextField"
+        app:layout_constraintVertical_bias="0.721" />
 
 </android.support.constraint.ConstraintLayout>

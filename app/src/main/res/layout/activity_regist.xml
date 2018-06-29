@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context="company.co.kr.tugether.RegistActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="134dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/emailaccount" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="311dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/email_line"
+        android:ems="10"
+        android:hint="이메일 주소를 등록해주세요"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="119dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="336dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
+        app:srcCompat="@drawable/password" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="308dp"
+        android:layout_height="22.5dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/password_line"
+        android:ems="10"
+        android:hint="비밀번호를 설정해주세요"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextField"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/etPasswordConfirm"
+        android:layout_width="308dp"
+        android:layout_height="22.5dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/password_line"
+        android:ems="10"
+        android:hint="비밀번호를 다시 입력해주세요"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <ImageButton
+        android:id="@+id/btnTeacher"
+        android:layout_width="321dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:background="#000000ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordConfirm"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tutorsignup_button" />
+
+    <ImageButton
+        android:id="@+id/btnStudent"
+        android:layout_width="149dp"
+        android:layout_height="72dp"
+        android:background="#000000ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTeacher"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tuteesignup_button" />
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        android:layout_width="145dp"
+        android:layout_height="71dp"
+        android:background="#000000ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTeacher"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_button" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+

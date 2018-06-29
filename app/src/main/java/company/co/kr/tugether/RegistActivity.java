@@ -1,4 +1,4 @@
-package company.co.kr.LoginActivityPackage;
+package company.co.kr.tugether;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -7,33 +7,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
-import company.co.kr.MainActivity;
-import company.co.kr.tugether.R;
-
-public class SingupActivity extends AppCompatActivity {
+public class RegistActivity extends AppCompatActivity {
 
     private EditText etEmail;
     private EditText etPassword;
     private EditText etPasswordConfirm;
-    private Button btnStudent;
-    private Button btnCancel;
-    private Button btnTeacher;
+    private ImageButton btnStudent;
+    private ImageButton btnCancel;
+    private ImageButton btnTeacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_regist);
 
-        etEmail = findViewById(R.id.etEmail);
-        etPassword = findViewById(R.id.etPassword);
-        etPasswordConfirm = findViewById(R.id.etPasswordConfirm);
-        btnStudent = findViewById(R.id.btnStudent);
-        btnCancel = findViewById(R.id.btnCancel);
-        btnTeacher = findViewById(R.id.btnTeacher);
+        etEmail = (EditText) findViewById(R.id.etEmail);
+        etPassword = (EditText) findViewById(R.id.etPassword);
+        etPasswordConfirm = (EditText) findViewById(R.id.etPasswordConfirm);
+        ImageButton btnStudent = (ImageButton) findViewById(R.id.btnStudent);
+        ImageButton btnCancel = (ImageButton) findViewById(R.id.btnCancel);
+        ImageButton btnTeacher = (ImageButton) findViewById(R.id.btnTeacher);
 
         /* 비밀번호 일치 검사 */
         etPasswordConfirm.addTextChangedListener(new TextWatcher() {
@@ -68,28 +69,28 @@ public class SingupActivity extends AppCompatActivity {
 
                 // 이메일 입력 확인
                 if( etEmail.getText().toString().length() == 0 ) {
-                    Toast.makeText(SingupActivity.this, "Email을 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "Email을 입력하세요!", Toast.LENGTH_SHORT).show();
                     etEmail.requestFocus();
                     return;
                 }
 
                 // 비밀번호 입력 확인
                 if( etPassword.getText().toString().length() == 0 ) {
-                    Toast.makeText(SingupActivity.this, "비밀번호를 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "비밀번호를 입력하세요!", Toast.LENGTH_SHORT).show();
                     etPassword.requestFocus();
                     return;
                 }
 
                 // 비밀번호 확인 입력 확인
                 if( etPasswordConfirm.getText().toString().length() == 0 ) {
-                    Toast.makeText(SingupActivity.this, "비밀번호 확인을 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "비밀번호 확인을 입력하세요!", Toast.LENGTH_SHORT).show();
                     etPasswordConfirm.requestFocus();
                     return;
                 }
 
                 // 비밀번호 일치 확인
                 if( !etPassword.getText().toString().equals(etPasswordConfirm.getText().toString()) ) {
-                    Toast.makeText(SingupActivity.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
                     etPassword.setText("");
                     etPasswordConfirm.setText("");
                     etPassword.requestFocus();
@@ -120,28 +121,28 @@ public class SingupActivity extends AppCompatActivity {
 
                 // 이메일 입력 확인
                 if( etEmail.getText().toString().length() == 0 ) {
-                    Toast.makeText(SingupActivity.this, "Email을 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "Email을 입력하세요!", Toast.LENGTH_SHORT).show();
                     etEmail.requestFocus();
                     return;
                 }
 
                 // 비밀번호 입력 확인
                 if( etPassword.getText().toString().length() == 0 ) {
-                    Toast.makeText(SingupActivity.this, "비밀번호를 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "비밀번호를 입력하세요!", Toast.LENGTH_SHORT).show();
                     etPassword.requestFocus();
                     return;
                 }
 
                 // 비밀번호 확인 입력 확인
                 if( etPasswordConfirm.getText().toString().length() == 0 ) {
-                    Toast.makeText(SingupActivity.this, "비밀번호 확인을 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "비밀번호 확인을 입력하세요!", Toast.LENGTH_SHORT).show();
                     etPasswordConfirm.requestFocus();
                     return;
                 }
 
                 // 비밀번호 일치 확인
                 if( !etPassword.getText().toString().equals(etPasswordConfirm.getText().toString()) ) {
-                    Toast.makeText(SingupActivity.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistActivity.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
                     etPassword.setText("");
                     etPasswordConfirm.setText("");
                     etPassword.requestFocus();
