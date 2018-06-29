@@ -69,7 +69,7 @@ Our project follows Java Code Conventions
 
  - tutee의 과제 인식을 위해 과제 상자를 통해 과제 공유
 
-3. 해결(이런 서비스가 나왔다.)
+### 3. 해결(이런 서비스가 나왔다.)
 
  - login과 register ? tutor와 tutee를 분리해 다른 기능으로 접근할 수 있도록 함
 
