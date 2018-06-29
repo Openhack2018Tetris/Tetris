@@ -19,7 +19,8 @@
         <activity android:name=".RegistActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".TeacherMain" />
-
+        <activity android:name=".Welcome"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
