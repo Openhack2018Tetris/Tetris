@@ -9,18 +9,13 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-<<<<<<< HEAD
         <activity android:name=".LoginActivity">
-=======
-        <activity android:name="company.co.kr.tugether.LoginActivity">
->>>>>>> 3f7df26964cc335a62976a6a2e01297e1eb4b22e
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name=".RegistActivity" />
         <activity android:name="company.co.kr.MainActivity" />
         <activity android:name="company.co.kr.TeacherMain" />
