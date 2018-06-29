@@ -1,11 +1,11 @@
 package company.co.kr.tugether;
 
-public class ListViewItem_student {
+public class ListViewItem_tutee {
     public String tutorName;
     public Gender gender;
     public String tutorPhone;
 
-    public ListViewItem_student(String tutorName, Gender gender, String tutorPhone)
+    public ListViewItem_tutee(String tutorName, Gender gender, String tutorPhone)
     {
         this.tutorName = tutorName;
         this.gender = gender;
