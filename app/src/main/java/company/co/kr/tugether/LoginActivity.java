@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -12,9 +13,11 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private EditText etEmail;
+    private Button signup;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_login);
 
         final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -36,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                             home_view.putExtra("from", "main");
                             startActivity(home_view);
                         } else
-                            Toast.makeText(getApplicationContext(), "아이디/비밀번호를 확인하세요.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "이메일/비밀번호를 확인하세요.", Toast.LENGTH_SHORT).show();
                         break;
 
                     default:
@@ -45,6 +48,18 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
+        etEmail = (EditText) findViewById(R.id.etEmail);
+        signup = (Button) findViewById(R.id.signup);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RegistActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivityForResult(intent, 1000);
+            }
+
+        });
+
         int[] btnItem = {R.id.logInBtn};
 
         for (int id : btnItem) {
@@ -52,6 +67,21 @@ public class LoginActivity extends AppCompatActivity {
             btn.setOnClickListener(onClickListener);
         }
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // setResult를 통해 받아온 요청번호, 상태, 데이터
+        Log.d("RESULT", requestCode + "");
+        Log.d("RESULT", resultCode + "");
+        Log.d("RESULT", data + "");
+
+        if(requestCode == 1000 && resultCode == RESULT_OK) {
+            Toast.makeText(LoginActivity.this, "회원가입을 완료했습니다!", Toast.LENGTH_SHORT).show();
+            etEmail.setText(data.getStringExtra("email"));
+        }
     }
 
     private boolean mainLogInCheck() {

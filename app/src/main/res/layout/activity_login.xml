@@ -14,7 +14,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="132dp"
         android:ems="10"
-        android:hint="아이디를 입력하세요."
+        android:hint="이메일을 입력하세요."
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -51,5 +51,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/passTextField"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="264dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passTextField" />
 
 </android.support.constraint.ConstraintLayout>

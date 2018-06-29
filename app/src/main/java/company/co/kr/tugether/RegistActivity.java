@@ -145,7 +145,7 @@ public class RegistActivity extends AppCompatActivity {
                     return;
                 }
 
-                Intent result = new Intent(getApplicationContext(), TeacherMain.class);
+                Intent result = new Intent(getApplicationContext(), MainActivity.class);
                 result.putExtra("email", etEmail.getText().toString());
 
                 // 자신을 호출한 Activity로 데이터를 보낸다.
