@@ -18,5 +18,28 @@
 
 ## Demo
 
-![welcome](https://user-images.githubusercontent.com/31719811/42074263-2c69dc5e-7ba6-11e8-935a-a002cd55ec8f.png/400x0)
+![welcome](https://user-images.githubusercontent.com/31719811/42074263-2c69dc5e-7ba6-11e8-935a-a002cd55ec8f.png)
+
+-----------------------------------------
+
+## How to use..?
+
+1. Log-in (or Sign-up)
+	1-1. In sign-up, if you are a tutee, sign up as tutee. If you are a tutor, sign up as tutor.
+
+2. top-left button is setting button
+
+3. top-right button is recommend books(subject-math).
+
+4. In middle of main page, you can see information about study.
+
+------------------------------------------
+
+## Contribution guidelines
+
+If you want to contribute to Tugether, comment to our project issue please.
+Our project follows Java Code Conventions
+
+
+
 
