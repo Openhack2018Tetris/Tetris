@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:background="@drawable/tuteebg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/progressrate"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profileicon"
+        android:layout_marginTop="70dp"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+
+        android:minWidth="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tutorName"
+            android:layout_width="match_parent"
+            android:divider="#ffcc22"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="-20dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tutorPhone"
+                android:layout_width="match_parent"
+                android:divider="#ffcc22"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone" />
+
+            <TextView
+                android:id="@+id/lecturetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#ffcc22"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="lecturetime" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/homework1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="homework1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/homework2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ffcc22"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="homework2" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

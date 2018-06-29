@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tutor_main_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button_gotoCommunity"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000FF"
+            android:src="@drawable/community_btn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/linearLayout_tutormain_container"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

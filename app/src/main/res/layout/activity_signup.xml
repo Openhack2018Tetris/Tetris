@@ -1,77 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="company.co.kr.tugether.RegistActivity">
+    android:background="@drawable/signupbg">
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/tuteesignup"
+        android:background="#000000FF"
+        android:id="@+id/imageButton_tuteeSignUp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_tutorSignUp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:src="@drawable/tutorsignupbtn"
+        android:layout_above="@id/imageButton_tuteeSignUp"
+        android:background="#000000FF"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="10dp"/>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:hint="Email"
-        android:id="@+id/etEmail" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/imageButton_tutorSignUp"
         android:inputType="textPassword"
-        android:ems="10"
-        android:hint="Password"
-        android:id="@+id/etPassword" />
+        android:hint="비밀번호 확인"
+        android:id="@+id/etPasswordConfirm"/>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:inputType="textPassword"
-        android:ems="10"
-        android:hint="Password 재입력"
-        android:id="@+id/etPasswordConfirm" />
+        android:layout_above="@id/etPasswordConfirm"
+        android:hint="비밀번호 입력"
+        android:id="@+id/etPassword"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/etPassword"
+        android:hint="이메일 주소 입력"
+        android:id="@+id/etEmail"
+        android:layout_marginBottom="30dp"/>
+    
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:src="@drawable/backbtn"
+        android:scaleType="fitCenter"
+        android:background="#000000FF"
+        android:id="@+id/imageButton_signup_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
 
-        <Button
-            android:id="@+id/btnStudent"
-            android:text="학생 가입"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/btnCancel"
-            android:text="취소"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/btnTeacher"
-            android:text="선생님 가입"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-</LinearLayout>
-
-
+</RelativeLayout>

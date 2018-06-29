@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/studentdatabox">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id = "@+id/imageView_tutormain_item_gender"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/imageView_tutormain_item_gender"
+            android:layout_toLeftOf="@id/imageView_tutormain_item_progressRate"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_tutormain_item_name"
+                android:layout_marginTop="35dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_tutormain_item_grade"
+                android:layout_marginTop="18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_tutormain_item_subject"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:id = "@+id/imageView_tutormain_item_progressRate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:gravity = "center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id = "@+id/textView_tutormain_item_progressRate"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000FF"
+            android:id="@+id/button_item_tutormain"/>
+    </RelativeLayout>
+</LinearLayout>
