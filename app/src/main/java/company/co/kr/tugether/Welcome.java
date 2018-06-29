@@ -1,13 +1,18 @@
-package company.co.kr.WelcomeActivityPackage;
+package company.co.kr.tugether;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.Notification;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import android.os.Message;
+import android.view.Window;
 import android.view.WindowManager;
 
-import company.co.kr.tugether.R;
-
-public class WelcomeActivity extends AppCompatActivity {
+public class Welcome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
