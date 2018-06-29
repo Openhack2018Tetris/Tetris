@@ -1,35 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="company.co.kr.tugether">
+    package="openhack.team18.tugether">
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/icon"
+        android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <activity android:name=".LoginActivityPackage.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".RegistActivity" />
-        <activity android:name="company.co.kr.MainActivity" />
-        <activity android:name="company.co.kr.TeacherMain" />
-        <activity android:name=".Welcome" />
-        <activity android:name=".recommend" />
-        <activity android:name=".midfirst" />
-        <activity android:name=".midsecond" />
-        <activity android:name=".midthird"></activity>
-=======
-        <activity android:name="company.co.kr.tugether.RegistActivity" />
-        <activity android:name="company.co.kr.MainActivity" />
-        <activity android:name="company.co.kr.TeacherMain" />
-        <activity android:name="company.co.kr.tugether.Welcome" />
->>>>>>> 3f7df26964cc335a62976a6a2e01297e1eb4b22e
+
+        <activity android:name=".WelcomeActivityPackage.WelcomeActivity"/>
+        <activity android:name=".LoginActivityPackage.SignupActivity"/>
+        <activity android:name=".TutorPackage.TutorMainActivityPackage.TutorMainActivity"/>
+        <activity android:name=".RecommendActivityPackage.RecommendActivity"/>
+        <activity android:name=".RecommendActivityPackage.midfirst"/>
+        <activity android:name=".RecommendActivityPackage.midsecond"/>
+        <activity android:name=".RecommendActivityPackage.midthird"/>
+        <activity android:name=".TutorPackage.TutorDetailActivityPackage.TutorDetailActivity"/>
+        <activity android:name=".TuteePackage.TuteeMainActivityPackage.TuteeMainActivity"/>
     </application>
+
 
 </manifest>
