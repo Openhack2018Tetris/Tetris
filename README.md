@@ -18,5 +18,5 @@
 
 ## Demo
 
-![welcome](https://user-images.githubusercontent.com/31719811/42074263-2c69dc5e-7ba6-11e8-935a-a002cd55ec8f.png){: width="50%" height="50%"}
+![welcome](https://user-images.githubusercontent.com/31719811/42074263-2c69dc5e-7ba6-11e8-935a-a002cd55ec8f.png/400x0)
 
