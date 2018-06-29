@@ -18,7 +18,7 @@
 
 ## Demo
 
-![welcome](https://user-images.githubusercontent.com/31719811/42074263-2c69dc5e-7ba6-11e8-935a-a002cd55ec8f.png)
+![welcome](https://user-images.githubusercontent.com/31719811/42074263-2c69dc5e-7ba6-11e8-935a-a002cd55ec8f.png "width:300px;height:600px;")
 
 -----------------------------------------
 
