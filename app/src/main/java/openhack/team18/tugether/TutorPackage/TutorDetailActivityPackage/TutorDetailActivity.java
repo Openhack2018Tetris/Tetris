@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -53,6 +55,7 @@ public class TutorDetailActivity extends AppCompatActivity {
     private TextView textView_lectureTime;
     private LinearLayout linearLayout_big;
     private TextView textView_progressRate;
+    private ImageButton imageButton_goback;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -71,6 +74,7 @@ public class TutorDetailActivity extends AppCompatActivity {
         textView_lectureTime = findViewById(R.id.lectureTime);
         linearLayout_big = findViewById(R.id.linearLayout_tutordetail_bigContainer);
         textView_progressRate = findViewById(R.id.textView_tutordetail_progressRate);
+        imageButton_goback = findViewById(R.id.imageButton_back_tutordetail);
 
         //dummy data
         data = new ArrayList<>();
@@ -150,6 +154,13 @@ public class TutorDetailActivity extends AppCompatActivity {
                 break;
             }
         }
+
+        imageButton_goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 }

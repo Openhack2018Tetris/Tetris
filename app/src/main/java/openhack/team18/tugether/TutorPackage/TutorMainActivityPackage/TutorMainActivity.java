@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import openhack.team18.tugether.RecommendActivityPackage.RecommendActivity;
 import openhack.team18.tugether.Gender;
 import openhack.team18.tugether.R;
+import openhack.team18.tugether.TutorPackage.AddTuteeActivityPackage.AddTuteeActivity;
 import openhack.team18.tugether.TutorPackage.TutorDetailActivityPackage.TutorDetailActivity;
 
 public class TutorMainActivity extends AppCompatActivity {
@@ -143,8 +144,21 @@ public class TutorMainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(TutorMainActivity.this, "학생 추가", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(TutorMainActivity.this, AddTuteeActivity.class);
+                startActivityForResult(intent, 3000);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch(requestCode)
+        {
+            case 3000:
+                if(resultCode == RESULT_OK)
+                {
+                    //데이터 입력
+                }
+        }
     }
 }

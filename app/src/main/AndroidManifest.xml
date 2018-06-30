@@ -25,6 +25,7 @@
         <activity android:name=".RecommendActivityPackage.midthird"/>
         <activity android:name=".TutorPackage.TutorDetailActivityPackage.TutorDetailActivity"/>
         <activity android:name=".TuteePackage.TuteeMainActivityPackage.TuteeMainActivity"/>
+        <activity android:name=".TutorPackage.AddTuteeActivityPackage.AddTuteeActivity"/>
     </application>
 
 
