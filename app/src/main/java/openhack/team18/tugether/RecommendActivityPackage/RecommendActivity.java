@@ -18,6 +18,7 @@ public class RecommendActivity extends AppCompatActivity {
     private Button button4;
     private Button button5;
     private Button button6;
+    private ImageButton imageButton;
 
 
     @Override
@@ -33,6 +34,7 @@ public class RecommendActivity extends AppCompatActivity {
         button4 = findViewById(R.id.highfirst);
         button5 = findViewById(R.id.highsecond);
         button6 = findViewById(R.id.highthird);
+        imageButton = findViewById(R.id.imageButton_recommend);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,13 @@ public class RecommendActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(RecommendActivity.this, midthird.class);
                 startActivity(intent);
+            }
+        });
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
